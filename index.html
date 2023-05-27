@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge-Encriptador</title>
+
+    <!--links-->
+    <link rel="Encriptador Icon" type="imagen/png" href="iconos/Vector.png">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/estilos.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+<body>
+
+    <!--Contenedor total-->
+    <div class="container">
+        <div class="area-1"><!--Area de ingreso de texto-->
+
+            <div><!--Icono de alura-->
+                <img class="icono" src="iconos/Vector.png">
+            </div>
+
+            <!--cuadro de ingreso de texto-->
+            <textarea class="texto" id="texto" name="texto" cols="80" rows="10"placeholder=" Ingresa el texto aqui"></textarea>
+
+            <div class="terminos"><!--terminos de la parte inferior-->
+                <img src="imagenes/Group.png">
+                <p>Solo letras minusculas y sin acento</p>
+            </div>
+
+            <!--Botones-->
+            <div class="botones">
+                <button class="btn-encriptar" type="button" id="encriptar" onclick="encriptar()">Encriptar</button>
+
+                <button class="btn-desencriptar" type="button" id="desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+        <div class="area-2"> <!--Area de interacción-->
+
+            <img src="imagenes/Muñeco.png" alt="Desencriptado" id="muñeco">
+
+             <div class="mensaje-encriptado" id="mensaje-encriptado">
+
+                 <h2 id="titulo-mensaje">Ningun mensaje fue encontrado</h2>
+                 <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
+                
+             </div>
+        </div>
+    </div>
+
+    <footer class="final"><!--Datos Personales-->
+        <a href="https://www.linkedin.com/in/william-eduardo-chero-villarreal-177707247/">
+            <img src="iconos/linkedin.png" alt="LinkedIn" width="50" height="50">
+        </a>
+        <a href="https://github.com/Skillchero">
+            <img src="iconos/Git-Hub.png" alt="LinkedIn" width="50" height="50">
+        </a>
+        <a href="https://twitter.com/cherowilliam12">
+            <img src="iconos/twiter.png" alt="LinkedIn" width="50" height="50">
+        </a>
+    </footer>
+
+</body>
+
+<!--javaScript-->
+<script src="js/web.js"></script>
+
+</html>
